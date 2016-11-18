@@ -1,0 +1,39 @@
+<view class="container">
+    <view class="botton">
+        <text>测试字体</text>
+    </view>
+</view>
+
+<view wx:for="{{list}}" class="bg-color">
+    <view class="border border-t ">
+        {{item}}
+    </view>
+</view>
+
+<view style="height:100px;">
+
+</view>
+
+<view class="bg-color">
+    <view class="border ui-border-t">
+        上边框
+    </view>
+    <view class="border ui-border">
+        边框
+    </view>
+    <view class="border ui-border-b">
+        下边框
+    </view>
+    <view class="border ui-border-tb">
+        上下边框
+    </view>
+    <view class="border ui-border-l">
+        左边框
+    </view>
+    <view class="border ui-border-r">
+        右边框
+    </view>
+    <view class="border ui-border-radius">
+        圆角边框
+    </view>
+</view>

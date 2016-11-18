@@ -1,0 +1,28 @@
+{
+    "pages":[
+        "pages/index/index",
+        "pages/test-template/testtemplate",
+        "pages/loading/loading"
+    ],
+    "navigationBarTitleText": "Demo",
+    "window": {
+    "navigationBarTitleText": "Demo"
+    },
+    "tabBar": {
+        "list": [{
+            "pagePath": "pages/index/index",
+            "text": "首页"
+        }, {
+            "pagePath": "pages/logs/logs",
+            "text": "日志"
+        },{
+            "pagePath": "pages/test-template/testtemplate",
+            "text": "模版"
+        }]
+    },
+    "networkTimeout": {
+        "request": 10000,
+        "downloadFile": 10000
+    },
+    "debug": false
+}

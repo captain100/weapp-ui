@@ -1,0 +1,24 @@
+<template name="template_1">
+    <view bindtap="click" data-type="{{type}}">
+        <template is="template_2" data="{{name: type}}"></template>
+    </view>
+</template>
+
+<template name="template_2">
+    <view class="list-item">{{name}}</view>
+</template>
+
+
+
+<view>
+    <block wx:for="{{list}}" wx:key="type">
+        <template is="template_1" data="{{...item}}"></template>
+    </block>
+    <view>
+        <text>开始了入坑之旅！！！</text>    
+    </view>
+    <view wx:if="{{clickType}}">
+        <template is="template_2" data="{{name: clickType}}"></template>
+    </view>
+
+</view>
